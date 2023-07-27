@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dashboard/CSS/dashboard.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="Investments/HTML/investmentdashboard.html">
+    <script src="Common/JS/gsap.min.js" defer></script>
+    <script src="Common/JS/hammerjs.js" defer></script>
+    <script src="Dashboard/JS/Animate/dashboardanimate.js" defer></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id="upperpage" class="upper">
+        <div class="upper-left">
+            <div class="left-upper">Good Afternoon! <i class="fa-solid fa-sun"></i></div>
+            <div class="left-lower">Samiran</div>
+        </div>
+        <div class="upper-right">
+            <div class="settings-button">
+                <i class="fa-solid fa-sliders"></i>
+            </div>
+        </div>
+    </div>
+    <div class="middle"></div>
+    <div id="lowerpage" class="lower">
+        <div class="lower-left">
+            <div class="main-balance-card" onclick="setTimeout('location.href=`Main/main.html`',380)" ;>
+                <div class="main-upper">
+                    <div class="main-upper-upper">April Month Expenses</div>
+                    <div class="main-upper-lower">
+                        <div class="main-upper-lower-left"></div>
+                        <div class="main-upper-lower-right"></div>
+                    </div>
+                </div>
+                <div class="main-lower">
+                    <div class="main-lower-upper">
+                        Expenses :
+                    </div>
+                    <div class="main-lower-lower">
+                        <div class="expenses-card">
+                            <div class="expenses-card-upper">Necessity</div>
+                            <div class="expenses-card-lower">23000</div>
+                        </div>
+
+                        <div class="expenses-card">
+                            <div class="expenses-card-upper">Necessity</div>
+                            <div class="expenses-card-lower">23000</div>
+                        </div>
+
+                        <div class="expenses-card">
+                            <div class="expenses-card-upper">Necessity</div>
+                            <div class="expenses-card-lower">23000</div>
+                        </div>
+
+                        <div class="expenses-card">
+                            <div class="expenses-card-upper">Necessity</div>
+                            <div class="expenses-card-lower">23000</div>
+                        </div>
+
+                        <div class="expenses-card">
+                            <div class="expenses-card-upper">Necessity</div>
+                            <div class="expenses-card-lower">23000</div>
+                        </div>
+
+                        <div class="expenses-card">
+                            <div class="expenses-card-upper">Necessity</div>
+                            <div class="expenses-card-lower">23000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-card"
+                onclick="setTimeout('location.href=`Investments/HTML/investmentdashboard.html`',380)">
+                <div class="investment-card-upper">Available Balance</div>
+                <div class="investment-card-middle">
+                    <div class="balance-amount">10000000</div>
+                </div>
+                <div class="investment-card-lower">
+                    <div class="market"></div>
+                </div>
+            </div>
+            <div class="Giving-card"></div>
+            <div class="Partitions-card"></div>
+            <div class="Loan-card"></div>
+            <div class="Credit-card"></div>
+            <div class="Other-funds-card"></div>
+            <div class="Personal-Details-card"></div>
+            <div class="Card-Information-Card"></div>
+        </div>
+    </div>
+    <!-- Second Page -->
+    <div id="secondpage" class="second-page">
+        <div class="second-upper">
+            Others Selections!
+        </div>
+
+        <div class="second-lower">
+            <div class="personal" onclick="personalPassword()">
+                <div class="personal-upper">Personal Details</div>
+                <div class="personal-lower">
+                    <div class="personal-lower-left">
+                        <div class="personal-details"></div>
+                        <div class="personal-details-word">Personal</div>
+
+                    </div>
+                    <div class="personal-lower-right">
+                        <div class="card-details"></div>
+                        <div class="card-details-word">Card</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="shortcuts-container">
+                <div class="shortcuts-upper">
+                    Shortcuts
+                </div>
+
+                <div class="shortcuts-lower">
+
+                    <div class="shortcuts-first">
+
+                        <div class="shortcuts">
+                            <div class="shortcuts-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div class="shortcut-wording">Analytics</div>
+                        </div>
+
+                        <div class="shortcuts">
+                            <div class="shortcuts-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                            <div class="shortcut-wording">History</div>
+                        </div>
+
+                        <div class="shortcuts">
+                            <div class="shortcuts-icon"><i class="fa-solid fa-newspaper"></i></div>
+                            <div class="shortcut-wording">News</div>
+                        </div>
+
+                    </div>
+
+                    <div class="shortcuts-second">
+
+                        <div class="shortcuts">
+                            <div class="shortcuts-icon"><i class="fa-solid fa-sliders"></i></div>
+                            <div class="shortcut-wording">Settings</div>
+                        </div>
+
+
+                        <div class="shortcuts">
+                            <div class="shortcuts-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                            <div class="shortcut-wording">Trend</div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="reminder-container">
+                <div class="reminder-upper">Reminder</div>
+                <div class="reminder-middle">
+                    <form class="reminder-form">
+                        <input class="reminder-text" type="text">
+                    </form>
+                </div>
+                <div class="reminder-lower">
+                    <div class="reminder-add"><i class="fa-solid fa-plus"></i></div>
+                    <div class="reminder-clear"><i class="fa-solid fa-trash"></i></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Form and Cards----------->
+
+    <!---- Personal Details Password entry--->
+
+    <div class="personal-details-password">
+        <div class="personal-details-password-upper" onclick="personalPasswordClose()"><i class="fa-solid fa-xmark"></i></div>
+        <div class="personal-details-password-lower">
+            <input type="text" class="type-password">
+            <div class="submit-button"><i class="fa-solid fa-check"></i></div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

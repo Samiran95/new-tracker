@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #e0e0e0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.upper{
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+    display: flex;
+}
+
+.upper-right{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171717;
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+}
+
+.settings-button:active{
+    transform: scale(0.93);
+}
+
+.upper-left{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-upper{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.left-lower{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.upper-right{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lower{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lower-left{
+    background-color: white;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+
+.lower-left::-webkit-scrollbar{
+    display: none;
+}
+
+
+.main-balance-card{
+    width: 95%;
+    padding: 10px;
+    background-color: blueviolet;
+    box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.8);
+    min-height: 30vh;
+    margin-top: 30px;
+    margin-bottom: 65px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.main-balance-card:active{
+    transform: scale(0.97);
+}
+
+.main-upper{
+    width: 100%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-upper-upper{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+
+}
+
+.main-upper-lower{
+    display: flex;
+    padding: 20px;
+}
+
+.main-upper-lower-left{
+    flex: 1;
+    height: 8vh;
+    background-color: #501785;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.main-upper-lower-right{
+    flex: 1;
+    height: 8vh;
+    background-color: #501785;
+    border-radius: 20px;
+}
+
+
+.main-lower{
+    width: 100%;
+    flex: 1.5;
+}
+
+.main-lower-upper{
+    position: relative;
+    left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.main-lower-lower{
+    display: flex;
+    overflow: scroll;
+}
+
+.main-lower-lower::-webkit-scrollbar{
+    display: none;
+}
+
+.expenses-card{
+    min-width: 100px;
+    min-height: 6vh;
+    background-color: #171717;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.expenses-card:nth-last-child(1){
+    margin-right: 0px;
+}
+
+.expenses-card-upper{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.expenses-card-lower{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.investment-card{
+    width: 95%;
+    min-height: 30vh;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.8);
+    transition: 0.1s;
+    background-color: #6bff86;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.investment-card:active{
+    transform: scale(0.97);
+}
+
+.investment-card-upper{
+    width: 100%;
+    flex : 0.7;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.investment-card-middle{
+    flex : 0.7;
+    width: 100%;  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.balance-amount{
+    width: 250px;
+    height: 8vh;
+    border-radius: 20px;
+    background-color: #4fbd63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.investment-card-lower{
+    flex : 1;
+}
+
+
+.Giving-card{
+    width: 95%;
+    min-height: 30vh;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.8);
+    transition: 0.1s;
+    background-color: brown;
+}
+
+.Partitions-card{
+    width: 95%;
+    min-height: 30vh;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.8);
+    transition: 0.1s;
+    background-color: beige;
+}
+
+.Loan-card{
+    width: 95%;
+    min-height: 30vh;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.8);
+    transition: 0.1s;
+    background-color: chartreuse;
+}
+
+.Credit-card{
+    width: 95%;
+    min-height: 30vh;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.8);
+    transition: 0.1s;
+    background-color: coral;
+}
+
+.Personal-Details-card{
+    width: 95%;
+    min-height: 30vh;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.8);
+    transition: 0.1s;
+    background-color: cyan;
+}
+
+.Card-Information-Card{
+    width: 95%;
+    min-height: 30vh;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    box-shadow: 0px 18px 60px 0px rgba(0, 0, 0, 0.8);
+    transition: 0.1s;
+    background-color: crimson;
+}
+
+/*---Second Page--*/
+
+
+.second-page{
+    position: absolute;
+    top: 0vh;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    overflow-y: scroll;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.second-page::-webkit-scrollbar{
+    display: none;
+}
+
+.second-upper{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.second-lower{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal{
+    width: 93%;
+    min-height: 250px;
+    background-color: #1f1f1f;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.personal-upper{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.personal-lower{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.personal-lower-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-details{
+    width: 140px;
+    height: 140px;
+    border-radius: 30px;
+    background-color: #e5989b;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.personal-details:active{
+    transform: scale(0.95);
+}
+
+.personal-lower-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.card-details{
+    width: 140px;
+    height: 140px;
+    border-radius: 30px;
+    background-color: #4361ee;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.card-details:active{
+    transform: scale(0.95);
+}
+
+.personal-details-word{
+    margin-top: 5px;
+    color: white;
+}
+
+.card-details-word{
+    margin-top: 5px;
+    color: white;
+}
+
+/*-----Shortcuts-----*/
+
+.shortcuts-container{
+    width: 95%;
+    min-height: 270px;
+    background-color: #1f1f1f;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shortcuts-upper{
+    flex: 0.5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.shortcuts-lower{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shortcuts-first{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.shortcuts-second{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.shortcuts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shortcuts-icon{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.shortcuts-icon:active{
+    transform: scale(0.91);
+}
+
+.shortcut-wording{
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/*----------*/
+
+/*----Reminder Container------*/
+
+.reminder-container{
+    width: 95%;
+    min-height: 300px;
+    background-color: #1f1f1f;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reminder-upper{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 600;  
+}
+
+.reminder-middle{
+    flex : 2.6;
+    width: 100%;
+    display: flex;
+
+}
+
+.reminder-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reminder-text{
+    display: flex;
+    min-width: 90%;
+    height: 150px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.reminder-lower{
+    flex : 1.4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.reminder-add{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4efc54;
+    box-shadow: 0px 0px 20px 0px#4efc54 ;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.reminder-add:active{
+    transform: scale(0.93);
+}
+
+.reminder-clear{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff2a1f;
+    box-shadow: 0px 0px 20px 0px#ff2a1f;    
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.reminder-clear:active{
+    transform: scale(0.93);
+}
+
+/*----------*/
+
+/*-----Personal Details password Card-----*/
+
+.personal-details-password{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 45vh;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.personal-details-password-upper{
+    height: 7vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 25px;
+}
+
+.personal-details-password-lower{
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-password{
+    width: 75%;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.submit-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #6bff86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
