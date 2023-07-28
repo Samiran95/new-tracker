@@ -11,7 +11,6 @@
 body{
     background-color: #e0e0e0;
     height: 100vh;
-    overflow: hidden;
 }
 
 .upper{
@@ -78,13 +77,11 @@ body{
 }
 
 .lower-left{
-    background-color: white;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
-    border-radius: 20px;
 }
 
 .lower-left::-webkit-scrollbar{
@@ -479,9 +476,9 @@ body{
 .shortcuts-icon{
     width: 60px;
     height: 60px;
-    background-color: black;
+    background-color: rgb(143, 142, 142);
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.9);
-    color: white;
+    color: black;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -611,8 +608,19 @@ body{
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.details-wording{
+    position: absolute;
+}
+
+.close-button{
+    position: absolute;
+    left: 90vw;
     font-size: 25px;
+    color: #6d6d6d;
 }
 
 .personal-details-password-lower{
@@ -647,5 +655,108 @@ body{
     font-size: 25px;
     margin: 30px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+/*---------------------------*/
+
+/*-----Card Details password Card-----*/
+
+.card-details-password{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 45vh;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.card-details-password-upper{
+    height: 7vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.details-wording{
+    position: absolute;
+}
+
+.close-button{
+    position: absolute;
+    left: 90vw;
+    font-size: 25px;
+    color: #6d6d6d;
+}
+
+.card-details-password-lower{
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-password{
+    width: 75%;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.submit-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #6bff86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+/*---------------------------*/
+
+/*-----------Outside Elements----------------*/
+
+.outside-elements{
+    position: absolute;
+    top: 102vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background-color: palevioletred;
+}
+
+.personal-details-outside{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    background-color: #e5989b;
+    border-radius: 40px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.card-details-outside{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    background-color: #4361ee;
+    border-radius: 40px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
 
 }

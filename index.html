@@ -103,15 +103,15 @@
         </div>
 
         <div class="second-lower">
-            <div class="personal" onclick="personalPassword()">
+            <div class="personal">
                 <div class="personal-upper">Personal Details</div>
                 <div class="personal-lower">
-                    <div class="personal-lower-left">
+                    <div class="personal-lower-left" onclick="setTimeout('personalPassword()',380)">
                         <div class="personal-details"></div>
                         <div class="personal-details-word">Personal</div>
 
                     </div>
-                    <div class="personal-lower-right">
+                    <div class="personal-lower-right" onclick="cardPassword()">
                         <div class="card-details"></div>
                         <div class="card-details-word">Card</div>
                     </div>
@@ -185,15 +185,45 @@
     <!---- Personal Details Password entry--->
 
     <div class="personal-details-password">
-        <div class="personal-details-password-upper" onclick="personalPasswordClose()"><i class="fa-solid fa-xmark"></i></div>
+        <div class="personal-details-password-upper">
+            <div class="details-wording">Enter your Password</div>
+            <div class="close-button">
+                <i class="fa-solid fa-xmark" onclick="personalPasswordClose()"></i>
+            </div>
+
+        </div>
         <div class="personal-details-password-lower">
             <input type="text" class="type-password">
             <div class="submit-button"><i class="fa-solid fa-check"></i></div>
         </div>
 
     </div>
+    <!-------------------------------->
 
+    
+    <!---- Card Details Password entry--->
 
+    <div class="card-details-password">
+        <div class="card-details-password-upper">
+            <div class="details-wording">Enter your Password</div>
+            <div class="close-button">
+                <i class="fa-solid fa-xmark" onclick="cardPasswordClose()"></i>
+            </div>
+
+        </div>
+        <div class="card-details-password-lower">
+            <input type="text" class="type-password">
+            <div class="submit-button"><i class="fa-solid fa-check"></i></div>
+        </div>
+
+    </div>
+    <!-------------------------------->
+
+    <!------------Outside Elements-------------->
+    <div class="outside-elements">
+    <div class="personal-details-outside"></div>
+    <div class="card-details-outside"></div>
+    </div>
 
 
 </body>

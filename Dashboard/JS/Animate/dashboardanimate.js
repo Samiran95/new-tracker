@@ -34,17 +34,100 @@ function personalPassword() {
 
     gsap.to(".personal-details-password",{
         y: "-47vh",
-        duration : 1,
+        duration : 0.7,
         ease: Power4.easeOut,
+        pointerEvents : "all",
+        zIndex : 1
     })
+
+    gsap.to(".second-page",{
+        filter : "blur(30px)",
+        duration : 0.5
+    })
+
+    gsap.to(".personal-details-outside",{
+        duration : 1,
+        y: "-85vh",
+        ease: Back.easeOut.config(0.5),
+    })
+
+
+
 }
 
 function personalPasswordClose() {
 
     gsap.to(".personal-details-password",{
         y: "0vh",
-        duration : 1,
+        duration : 0.7,
         ease: Power4.easeOut,
-        pointerEvents : "none"
+        pointerEvents : "none",
+        zIndex : 0
     })
+
+    gsap.to(".second-page",{
+        filter : "blur(0px)",
+        duration : 0.7
+    })
+
+    gsap.to(".personal-details-outside",{
+        duration : 0.5,
+        y: "0vh",
+        ease: Power3.easeIn,
+    })
+
 }
+
+
+/////////////////////////////////
+
+//Card password
+
+function cardPassword() {
+
+    gsap.to(".card-details-password",{
+        y: "-47vh",
+        duration : 0.7,
+        ease: Power4.easeOut,
+        pointerEvents : "all",
+        zIndex : 1,
+    })
+
+    gsap.to(".second-page",{
+        filter : "blur(30px)",
+        duration : 0.5
+    })
+
+    gsap.to(".card-details-outside",{
+        duration : 1,
+        y: "-85vh",
+        ease: Back.easeOut.config(0.5),
+    })
+
+
+}
+
+function cardPasswordClose() {
+
+    gsap.to(".card-details-password",{
+        y: "0vh",
+        duration : 0.7,
+        ease: Power4.easeOut,
+        pointerEvents : "none",
+        zIndex : 0,
+    })
+
+    gsap.to(".second-page",{
+        filter : "blur(0px)",
+        duration : 0.7
+    })
+
+    gsap.to(".card-details-outside",{
+        duration : 0.5,
+        y: "0vh",
+        ease: Power3.easeIn,
+    })
+
+}
+
+/////////////////////////////////
