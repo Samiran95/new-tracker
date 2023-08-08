@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.red-container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.green-container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.upper{
+    width: 100%;
+    height: 15vh;
+}
+
+
+
+.lower{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard{
+    width: 95%;
+    background-color: #e0e0e0;
+    height: 82vh;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.watchlist-container {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ebebeb;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.heading-upper {
+    width: 85vw;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.watchlist-heading-word {
+    width: 50%;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.watchlist-butt{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.setting-button {
+    background-color: #0f0f0f;
+    margin: 10px 15px 5px 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-containers {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    background: linear-gradient(190deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.expense-data-container {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    justify-content: space-between;
+    text-align: center;
+    width: 33.33%;
+}
+
+.expense-data-heading {
+    font-size: 13px;
+    color: #bababa;
+}
+
+.expense-data-amount {
+    color: #5cfa79;
+    font-size: 18px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.data-container-main{
+    width: 100%;
+    border-radius: 0px 0px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.data-container-main::-webkit-scrollbar{
+    display: none;
+}
+
+.data-containers1 {
+    min-width: 140px;
+    height: 100px;
+    margin-right: 10px;
+    background-color: black;
+    background: linear-gradient(190deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.data-containers1:nth-last-child(1){
+    margin-right: 0px;
+}
+
+.month-data-container{
+    display: flex;
+    height: 55%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.month-data-heading {
+    font-size: 13px;
+    color: #bababa;
+}
+
+.month-data-amount {
+    color: #5cfa79;
+    font-size: 18px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.data-containers2 {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    background: linear-gradient(190deg, rgba(42, 42, 42, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+/****    Below elements   ****/
+.below-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/****    Transaction container   ****/
+
+
+/****    Cancel   ****/
+.cancel-upper{
+    width: 100%;
+    display: flex;
+    width: 85%;
+    min-height: 70px;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 25px;
+    color: black;
+}
+
+/****    Transaction container   ****/
+
+.transactions{
+    position: absolute;
+    top: 102vh;
+    width: 95%;
+    height: 40vh;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow-y: scroll;
+}
+
+.income-expense{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.income-button{
+    width: 150px;
+    height: 150px;
+    background-color: greenyellow;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.expense-button{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.icon{
+    font-size: 60px;
+}
+
+
+
+/****************/
+
+/*******Expenses Types*********/
+
+.expenses-types{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.expenses-types::-webkit-scrollbar{
+    display: none;
+}
+
+.expenses-category{
+    min-width: 80%;
+    min-height: 20vh;
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.9);   
+}
+
+
+/****************/
+
+
+/*******Necessity Form*********/
+
+.necessity-form{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+/****************/
+
+.wants-form{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+/****************/
+
+.others-form{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+/****************/
+
+
+/*******Income Form*********/
+
+.income-form{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+}
+
+/****************/
+
+
+
+/*******Spending For*********/
+
+.category-select-word{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+/****************/
+
+
+/*******Small-Necssity-container*********/
+
+.necessity-small-container{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wants-small-container{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.others-small-container{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.income-small-container{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-container{
+    width: 200px;
+    height: 100px;
+    background-color: #0f0f0f;
+    border-radius: 30px;
+    margin-right: 20px;
+    color: white;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.change-container{
+    width: 100px;
+    height: 100px;
+    background-color: #0f0f0f;
+    border-radius: 30px;  
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.4);
+}
+/****************/

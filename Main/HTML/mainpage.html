@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../CSS/mainpage.css">
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../../Common/JS/hammerjs.js" defer></script>
+    <script src="../JS/mainpageaniate.js" defer></script>
+</head>
+
+<body>
+    <div class="red-container"></div>
+    <div class="green-container"></div>
+    <div class="upper"></div>
+    <div class="lower" ondblclick="transactionPop();">
+        <div class="dashboard">
+
+            <div class="watchlist-container">
+
+                <!-- From here the container Starts -->
+                <div class="heading-upper">
+                    <div class="watchlist-heading-word">Balance Available</div>
+                    <button type="button" class="setting-button"><i class="fa-solid fa-gear"></i></button>
+                </div>
+                <div class="data-containers">
+
+                    <div class="expense-data-container"
+                        onclick="location.href = 'Trends/Necessity/necessitytrends.html';">
+                        <div class="expense-data-heading">Necessity</div>
+                        <div class="expense-data-amount">4500</div>
+                    </div>
+
+                    <div class="expense-data-container" onclick="location.href = 'Trends/Wants/wantstrends.html';">
+                        <div class="expense-data-heading">Wants</div>
+                        <div class="expense-data-amount">1342</div>
+                    </div>
+
+                    <div class="expense-data-container"
+                        onclick="location.href = 'Trends/Investments/investmentstrends.html';">
+                        <div class="expense-data-heading">Others</div>
+                        <div class="expense-data-amount">2666</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="watchlist-container">
+
+                <div class="heading-upper">
+                    <div class="watchlist-heading-word">Current Month Expenses</div>
+                    <button type="button" class="setting-button">Settings</button>
+                </div>
+                <div class="data-container-main">
+                    <div class="data-containers1">
+
+                        <div class="month-data-container"
+                            onclick="location.href = 'Trends/Necessity/necessitytrends.html';">
+                            <div class="month-data-heading">Expense</div>
+                            <div class="month-data-amount">&#8377 1234</div>
+                        </div>
+                    </div>
+                    <div class="data-containers1">
+
+                        <div class="month-data-container" onclick="location.href = 'Trends/Wants/wantstrends.html';">
+                            <div class="month-data-heading">Income</div>
+                            <div class="month-data-amount">&#8377 1342</div>
+                        </div>
+                    </div>
+
+                    <div class="data-containers1">
+
+                        <div class="month-data-container" onclick="location.href = 'Trends/Wants/wantstrends.html';">
+                            <div class="month-data-heading">Income</div>
+                            <div class="month-data-amount">&#8377 1342</div>
+                        </div>
+                    </div>
+
+                    <div class="data-containers1">
+
+                        <div class="month-data-container" onclick="location.href = 'Trends/Wants/wantstrends.html';">
+                            <div class="month-data-heading">Income</div>
+                            <div class="month-data-amount">1342</div>
+                        </div>
+                    </div>
+
+                    <div class="data-containers1">
+
+                        <div class="month-data-container" onclick="location.href = 'Trends/Wants/wantstrends.html';">
+                            <div class="month-data-heading">Income</div>
+                            <div class="month-data-amount">1342</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="below-elements">
+        <!----------------Forms ----------------->
+        <!--Income-Expense containers-->
+
+        <div class="transactions">
+            <div class="cancel-upper">
+                <div class="cancel"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="income-expense">
+                <div class="income-button" onclick="incomeForm()">
+                    <div class="icon"><i class="fa-solid fa-caret-down"></i> </div>
+                    <div class="transactions-word">Income</div>
+                </div>
+                <div class="expense-button" onclick="">
+                    <div class="expense-button" onclick="expenseCategoryPop()">
+                        <div class="icon"><i class="fa-solid fa-caret-up"></i> </div>
+                        <div class="transactions-word">Expense</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--------------------------------->
+
+        <!--------------Categories Containers------------------->
+
+        <div class="expenses-types">
+            <div class="cancel-upper">
+                <div class="cancel"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="expenses-category" onclick="necessityForm()">
+                <div class="category-upper">Necessity</div>
+            </div>
+
+            <div class="expenses-category">
+                <div class="category-upper" onclick="wantsForm()">Wants</div>
+            </div>
+
+            <div class="expenses-category">
+                <div class="category-upper" onclick="othersForm()">Others</div>
+            </div>
+        </div>
+        <!--------------------------------->
+
+        <!----------------income Expense Form ----------------->
+        <div class="income-form"></div>
+        <!--------------------------------->
+
+
+        <!----------------Necessity Expense Form ----------------->
+        <div class="necessity-form">necessity</div>
+        <!--------------------------------->
+
+        <!----------------Necessity Expense Form ----------------->
+        <div class="wants-form">wants</div>
+        <!--------------------------------->
+
+        <!----------------Necessity Expense Form ----------------->
+        <div class="others-form">others</div>
+        <!--------------------------------->
+
+
+        <!----------------Elements ----------------->
+
+        <div class="category-select-word">Spending for?</div>
+
+        <div class="necessity-small-container">
+            <div class="detail-container">necessity-form</div>
+            <div class="change-container"></div>
+        </div>
+
+        <div class="wants-small-container">
+            <div class="detail-container">wants</div>
+            <div class="change-container"></div>
+        </div>
+
+        <div class="others-small-container">
+            <div class="detail-container">Others</div>
+            <div class="change-container"></div>
+        </div>
+
+        <div class="income-small-container">
+            <div class="detail-container">Income</div>
+            <div class="change-container"></div>
+        </div>
+        <!--------------------------------->
+    </div>
+</body>
+
+</html>
