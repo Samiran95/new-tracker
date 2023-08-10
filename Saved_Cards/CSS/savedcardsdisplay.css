@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.upper{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.typeofcard{
+    width: 37vw;
+    height: 50px;
+    background-color: #ebebeb;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+.filter{
+    width: 90px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.delete{
+    background-color: red;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle{
+    display: flex;
+    width: 80vw;
+    max-height: 10vh;
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* filter*/
+.filter-name{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter-word{
+    font-weight: 600;
+}
+
+.actual-filter{
+    margin-left: 20px;
+    padding: 4px 13px 4px 13px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* filter*/
+
+
+.card-heading{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.saved-cards-word{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.add{
+    background-color: #0f0f0f;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+
+.lower{
+    height: 75vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+    padding: 30px 0px 30px 0px;
+    border-radius: 50px;
+    overflow-y: scroll;
+}
+
+.lower::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    margin-bottom: 30px;
+    width: 80vw;
+    min-height: 180px;
+    border-radius: 40px;
+    display: flex;
+    overflow: hidden;
+}
+
+.card:nth-last-child(1){
+    margin-bottom: 0px;
+}
+
+.card-left{
+    flex: 8;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(95, 252, 108);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-upper{
+    flex: 2;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.bank-name{
+    margin-left: 10px;
+}
+
+.card-middle{
+    flex: 2;
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.card-lower{
+    flex: 2;
+    width: 110%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.heading{
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.content{
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.card-right{
+    flex: 1.3;
+    width: 100%;
+    height: 100%;
+    background-color: #242424;;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.entry-form{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 80vh;
+    background-color: #242424;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.entry-form-words{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+

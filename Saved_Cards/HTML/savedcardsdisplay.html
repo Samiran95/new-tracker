@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/savedcardsdisplay.css">
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animation/displayamimate.js" defer></script>
+    <script src="../../Common/JS/animate.js" defer></script>
+    <title>Saved Cards</title>
+</head>
+
+<body>
+    <div class="upper">
+        <form>
+            <select class="typeofcard">
+                <option value="">Filter by</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Virtual Card">Virtual Card</option>
+                <option value="Others">Others</option>
+            </select>
+            <button type="button" class="filter">Filter</button>
+            <button type="button" class="delete">Delete ?</button>
+        </form>
+    </div>
+    <div class="middle">
+        <div class="filter-name">
+            <p class="filter-word">Filter By :</p>
+            <p class="actual-filter">None</p>
+        </div>
+        <div class="card-heading">
+            <p class="saved-cards-word">Saved Cards</p>
+            <div class="active-buttons">
+                <button type="button" class="add" onclick="addCards()"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="delete"><i class="fa-solid fa-trash"></i></button>
+            </div>
+
+        </div>
+    </div>
+    <div class="lower">
+        <div class="card">
+            <div class="card-left">
+                <div class="card-upper">
+                    <p class="bank-name">HDFC Bank</p>
+                    <p class="issued-by">VISA</p>
+                </div>
+                <div class="card-middle">1234 1234 1234 1234</div>
+                <div class="card-lower">
+                    <div class="owner">
+                        <div class="heading">Owner Name</div>
+                        <div class="content">Samiran Goldar</div>
+                    </div>
+                    <div class="exp-date">
+                        <div class="heading">Exp Date</div>
+                        <div class="content">02/22</div>
+                    </div>
+                    <div class="cvv">
+                        <div class="heading">CVV</div>
+                        <div class="content">234</div>
+                    </div>
+                    <div class="pin">
+                        <div class="heading">PIN</div>
+                        <div class="content">1234</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-right">Debit Card</div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-left">
+                <div class="card-upper">
+                    <p class="bank-name">HDFC Bank</p>
+                    <p class="issued-by">RUPAY</p>
+                </div>
+                <div class="card-middle">1234 1234 1234 1234</div>
+                <div class="card-lower">
+                    <div class="owner">
+                        <div class="heading">Owner Name</div>
+                        <div class="content">Samiran Goldar</div>
+                    </div>
+                    <div class="exp-date">
+                        <div class="heading">Exp Date</div>
+                        <div class="content">02/22</div>
+                    </div>
+                    <div class="cvv">
+                        <div class="heading">CVV</div>
+                        <div class="content">234</div>
+                    </div>
+                    <div class="pin">
+                        <div class="heading">PIN</div>
+                        <div class="content">1234</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-right">Credit Card</div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-left">
+                <div class="card-upper">
+                    <p class="bank-name">HDFC Bank</p>
+                    <p class="issued-by">Master Card</p>
+                </div>
+                <div class="card-middle">1234 1234 1234 1234</div>
+                <div class="card-lower">
+                    <div class="owner">
+                        <div class="heading">Owner Name</div>
+                        <div class="content">Samiran Goldar</div>
+                    </div>
+                    <div class="exp-date">
+                        <div class="heading">Exp Date</div>
+                        <div class="content">02/22</div>
+                    </div>
+                    <div class="cvv">
+                        <div class="heading">CVV</div>
+                        <div class="content">234</div>
+                    </div>
+                    <div class="pin">
+                        <div class="heading">PIN</div>
+                        <div class="content">1234</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-right">Virtual Credit Card</div>
+        </div>
+
+        <div class="card">
+            <div class="card-left">
+                <div class="card-upper">
+                    <p class="bank-name">HDFC Bank</p>
+                    <p class="issued-by">RUPAY</p>
+                </div>
+                <div class="card-middle">1234 1234 1234 1234</div>
+                <div class="card-lower">
+                    <div class="owner">
+                        <div class="heading">Owner Name</div>
+                        <div class="content">Samiran Goldar</div>
+                    </div>
+                    <div class="exp-date">
+                        <div class="heading">Exp Date</div>
+                        <div class="content">02/22</div>
+                    </div>
+                    <div class="cvv">
+                        <div class="heading">CVV</div>
+                        <div class="content">234</div>
+                    </div>
+                    <div class="pin">
+                        <div class="heading">PIN</div>
+                        <div class="content">1234</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-right">Credit Card</div>
+        </div>
+
+    </div>
+        <div class="entry-form"></div>
+        <div class="entry-form-words">Add Cards!</div>
+
+</body>
+
+</html>
